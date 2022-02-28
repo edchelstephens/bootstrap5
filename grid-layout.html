@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <style>
+    .row > [class^="col"] {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      background-color: rgba(182, 89, 27, 0.25);
+      border: 1px solid rgba(228, 75, 15, 0.4);
+    }
+    .row {
+      margin-top: 0.25em;
+    }
+
+    .sample-bgcolor {
+      background-color: rgba(182, 89, 27, 0.25);
+    }
+  </style>
+  <body>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-lg-2">Col 1</div>
+        <div class="col-lg-7">Col 2</div>
+        <div class="col-lg-3">Col 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-sm-4">I need 8 cols please!</div>
+        <div class="col-md-4 col-sm-8">I'll take 4 if it's okay</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-md-4">6 or 4?</div>
+        <div class="col-6 col-md-4">6 or 4?</div>
+        <div class="col-6 col-md-4">6 or 4?</div>
+      </div>
+
+      <div class="row">
+        <img
+          src="images/bethanylogo.png"
+          alt="bethany logo"
+          class="col-lg-4 col-sm-8"
+        />
+        <div class="col-lg-8 col-sm-4">
+          <h2>Bethany's Pie Shop</h2>
+          <h3>Welcome to our store</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+            modi ipsam ad adipisci tempore animi cum sequi suscipit et error
+            vero, reiciendis repellendus cupiditate dignissimos a aspernatur
+            voluptate magnam sapiente?
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-cols-2">
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">Level 1</div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-8 col-sm-6">Element 1 at level 2</div>
+            <div class="col-4 col-sm-6">Element 2 at level 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
