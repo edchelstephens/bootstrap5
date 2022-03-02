@@ -8,3 +8,8 @@ body {
 .bg-primary {
   background-color: #a593c2 !important;
 }
+
+.card-footer {
+  background: transparent;
+  border-top: 0px;
+}
