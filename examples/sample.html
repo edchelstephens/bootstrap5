@@ -13,21 +13,7 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <style>
-    .row > [class^="col"] {
-      padding-top: 1em;
-      padding-bottom: 1em;
-      background-color: rgba(182, 89, 27, 0.25);
-      border: 1px solid rgba(228, 75, 15, 0.4);
-    }
-    .row {
-      margin-top: 0.25em;
-    }
-
-    .sample-bgcolor {
-      background-color: rgba(182, 89, 27, 0.25);
-    }
-  </style>
+  <style></style>
   <body>
     <div class="container">
       <div class="progress">
@@ -65,9 +51,15 @@
     <br />
     <div class="container">
       <form>
+        <h3>Login form</h3>
         <div class="mb-2">
           <label for="emailInput" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="emailInput" />
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            area-describedby="emailHelp"
+          />
           <div class="form-text" id="emailHelp">
             We will not share your email
           </div>
@@ -87,6 +79,55 @@
           >
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+
+    <br />
+    <div class="container">
+      <h3>Other form</h3>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="emailInput2" class="form-label">Email address</label>
+          <input
+            type="email"
+            name="email"
+            id="emailInput2"
+            class="form-control"
+          />
+          <div class="form-text" id="emailHelp2">We won't share your email</div>
+        </div>
+        <div class="col-md-6">
+          <label for="passwordInput2" class="form-label">Password</label
+          ><input
+            type="password"
+            name="password"
+            id="passwordInput2"
+            class="form-control"
+          />
+        </div>
+      </form>
+      <br />
+      <form class="row g-3">
+        <h3>Form Floating label</h3>
+        <div class="form-floating col-md-6">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="name@example.com"
+            id="emailInput3"
+          />
+          <label for="emailInput3">Email address</label>
+        </div>
+        <div class="form-floating col-md-6">
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            id="passwordInput3"
+            class="form-control"
+          />
+          <label for="passwordInput3" class="form-label">Password</label>
+        </div>
       </form>
     </div>
   </body>
