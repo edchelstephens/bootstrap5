@@ -80,7 +80,12 @@
           </div>
           <div class="col-md-7 col-lg-8">
             <h4 class="mb-3">Your address</h4>
-            <form action="done-order.html" method="GET">
+            <form
+              class="needs-validation"
+              action="done-order.html"
+              method="GET"
+              novalidate
+            >
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">First name</label
@@ -91,6 +96,7 @@
                     class="form-control"
                     placeholder="First name"
                     value=""
+                    required
                   />
                 </div>
                 <div class="col-sm-6">
@@ -102,6 +108,7 @@
                     placeholder="Last name"
                     value=""
                     class="form-control"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -114,6 +121,7 @@
                       id="username"
                       class="form-control"
                       placeholder="Username"
+                      required
                     />
                   </div>
                 </div>
@@ -137,6 +145,7 @@
                     id="address"
                     class="form-control"
                     placeholder="1234 Main St"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -152,7 +161,12 @@
                 </div>
                 <div class="col-md-5">
                   <label for="country" class="form-label">Country</label>
-                  <select name="country" id="country" class="form-select">
+                  <select
+                    name="country"
+                    id="country"
+                    class="form-select"
+                    required
+                  >
                     <option value="">Choose...</option>
                     <option>Belgium</option>
                     <option>France</option>
@@ -163,7 +177,7 @@
                 </div>
                 <div class="col-md-4">
                   <label for="state" class="form-label">State</label>
-                  <select name="state" id="state" class="form-select">
+                  <select name="state" id="state" class="form-select" required>
                     <option value="">Choose...</option>
                     <option>N/A</option>
                     <option>Alabama</option>
@@ -188,6 +202,7 @@
                     id="zip"
                     class="form-control"
                     placeholder=""
+                    required
                   />
                 </div>
               </div>
@@ -254,6 +269,7 @@
                     id="cc-name"
                     class="form-control"
                     placeholder="Jane Doe"
+                    required
                   /><label for="cc-name">Name on card</label
                   ><small class="text-muted"
                     >Full name as displayed on card</small
@@ -266,6 +282,7 @@
                     id="cc-number"
                     class="form-control"
                     placeholder="xxx-xxx-xxxx-xx"
+                    required
                   /><label for="cc-number">Credit card number</label>
                 </div>
 
@@ -276,6 +293,7 @@
                     id="cc-expiration"
                     class="form-control"
                     placeholder="12/23"
+                    required
                   /><label for="cc-expiration">Expiration</label>
                 </div>
                 <div class="form-floating col-md-3">
@@ -285,6 +303,7 @@
                     id="cc-cvv"
                     class="form-control"
                     placeholder="123"
+                    required
                   /><label for="cc-cvv">CVV</label>
                 </div>
               </div>
@@ -297,5 +316,6 @@
         </div>
       </div>
     </main>
+    <script src="js/form-validation.js"></script>
   </body>
 </html>
