@@ -209,11 +209,149 @@
           </div>
         </div>
       </div>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-      ></script>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="shoppingCart"
+        aria-labelledby="shoppingCartLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="shoppingCartLabel">
+            Your shopping cart
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Pie name</th>
+                  <th>Quantity</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-sm-8 col-md-6">
+                    <div class="media">
+                      <img
+                        src="images/products/pumpkinpiesmall.jpg"
+                        alt="pumpkin pie"
+                        class="mr-3 thumbnail imf-fluid"
+                      />
+                      <div class="media-body">
+                        <h5 class="mt-0 media-heading text-primary">
+                          Pumpkin pie
+                        </h5>
+                        <span>Status: </span
+                        ><span class="text-success"
+                          ><strong>In Stock</strong></span
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-align-center">
+                    <input type="number" class="form-control" value="2" />
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$14.95</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$29.90</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1">
+                    <button class="btn btn-danger" type="button">X</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-sm-8 col-md-6">
+                    <div class="media">
+                      <img
+                        src="images/products/applepiesmall.jpg"
+                        alt="apple pie"
+                        class="mr-3 thumbnail"
+                      />
+                      <div class="media-body">
+                        <h5 class="mt-0 media-heading text-primary">
+                          Apple pie
+                        </h5>
+                        <span>Status </span
+                        ><span class="text-warning"
+                          ><strong>Last items</strong></span
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-align-center">
+                    <input type="number" class="form-control" value="1" />
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$14.95</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$14.95</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1">
+                    <button class="btn btn-danger" type="button">X</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-right" colspan="3">
+                    <h5>Subtotal</h5>
+                  </td>
+                  <td class="text-center">
+                    <h5><strong>$44.85</strong></h5>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="text-right" colspan="3">
+                    <h3>Total</h3>
+                  </td>
+                  <td class="text-center">
+                    <h3><strong>$54.85</strong></h3>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <form class="m-1">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Promo code"
+              />
+              <div class="input-group-append">
+                <button class="btn-btn-secondary" type="button">Redeem</button>
+              </div>
+            </div>
+          </form>
+          <a href="order.html" type="button" class="m1 btn btn-sucess"
+            >Go to order page</a
+          >
+          <a href="" class="m1-btn btn-danger" type="button"
+            >Clear your shopping cart</a
+          >
+        </div>
+      </div>
     </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
