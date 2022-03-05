@@ -54,7 +54,82 @@
       </nav>
     </header>
     <main class="container" role="main">
-      <nav class="my-3 ms-3">
+      <div class="carousel slide" id="welcomeCarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            class="active"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="0"
+            aria-current="true"
+            area-label="Welcome 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Welcome 2"
+          ></button>
+          <button
+            type="button"
+            aria-label="Welcome 3"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item welcome-carousel-image1 active">
+            <div class="carousel-caption">
+              <h1>Welcome to our Pie shop</h1>
+              <p>Home of the best pies!</p>
+            </div>
+          </div>
+          <div class="carousel-item welcome-carousel-image2">
+            <div class="carousel-caption text-start">
+              <h1>Discover our subscription</h1>
+              <p>Pies delivered to your door</p>
+              <p>
+                <a
+                  href="piesubscription.html"
+                  role="button"
+                  class="btn btn-lg btn-primary"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item welcome-carousel-image3">
+            <div class="carousel-caption text-end">
+              <h1>Summer pies</h1>
+              <p>Every season, there is a pie</p>
+              <p>
+                <a href="fruitpies.html" class="btn btn-lg btn-primary"
+                  >Fruit pies</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#welcomeCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#welcomeCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <nav aria-label="breadcrumb" class="my-3 ms-3">
         <ol
           class="breadcrumb"
           style="--bs-breadcrumb-divider: '>'"
