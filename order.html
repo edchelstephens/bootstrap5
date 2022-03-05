@@ -98,6 +98,7 @@
                     value=""
                     required
                   />
+                  <div class="invalid-feedback">Valid name is required</div>
                 </div>
                 <div class="col-sm-6">
                   <label for="lastName" class="form-label">Last name</label>
@@ -110,6 +111,9 @@
                     class="form-control"
                     required
                   />
+                  <div class="invalid-feedback">
+                    Valid last name is required
+                  </div>
                 </div>
                 <div class="col-12">
                   <label for="username" class="form-label">Username</label>
@@ -123,6 +127,10 @@
                       placeholder="Username"
                       required
                     />
+
+                    <div class="invalid-feedback">
+                      Valid username is required
+                    </div>
                   </div>
                 </div>
                 <div class="col-12">
@@ -135,6 +143,7 @@
                     class="form-control"
                     placeholder="you@example.com"
                   />
+                  <div class="invalid-feedback">Please enter valid email</div>
                 </div>
 
                 <div class="col-12">
@@ -147,6 +156,9 @@
                     placeholder="1234 Main St"
                     required
                   />
+                  <div class="invalid-feedback">
+                    Please enter your shipping address
+                  </div>
                 </div>
                 <div class="col-12">
                   <label for="address2" class="form-label"
@@ -174,6 +186,7 @@
                     <option>United Kingdom</option>
                     <option>United States</option>
                   </select>
+                  <div class="invalid-feedback">Please select country</div>
                 </div>
                 <div class="col-md-4">
                   <label for="state" class="form-label">State</label>
@@ -193,6 +206,7 @@
                     <option>Hawaii</option>
                     <option>Idaho</option>
                   </select>
+                  <div class="invalid-feedback">Please select state</div>
                 </div>
                 <div class="col-md-3">
                   <label for="zip" class="form-label">Zip</label
@@ -204,6 +218,7 @@
                     placeholder=""
                     required
                   />
+                  <div class="invalid-feedback">Please select zip code</div>
                 </div>
               </div>
               <hr class="my-4" />
@@ -237,6 +252,7 @@
                     id="credit"
                     class="form-check-input"
                     checked
+                    required
                   /><label for="credit" class="form-check-label"
                     >Credit card</label
                   >
@@ -247,6 +263,7 @@
                     name="paymentMethod"
                     id="debit"
                     class="form-check-input"
+                    required
                   /><label for="debit" class="form-check-label"
                     >Debit card</label
                   >
@@ -258,6 +275,7 @@
                     name="paymentMethod"
                     id="paypal"
                     class="form-check-input"
+                    required
                   /><label for="paypal" class="form-check-label">Paypal</label>
                 </div>
               </div>
@@ -274,6 +292,7 @@
                   ><small class="text-muted"
                     >Full name as displayed on card</small
                   >
+                  <div class="invalid-feedback">Name on card is required</div>
                 </div>
                 <div class="form-floating col-md-6">
                   <input
@@ -284,6 +303,7 @@
                     placeholder="xxx-xxx-xxxx-xx"
                     required
                   /><label for="cc-number">Credit card number</label>
+                  <div class="invalid-feedback">Credit card is required</div>
                 </div>
 
                 <div class="form-floating col-md-3">
@@ -295,6 +315,10 @@
                     placeholder="12/23"
                     required
                   /><label for="cc-expiration">Expiration</label>
+
+                  <div class="invalid-feedback">
+                    Expiration date is required
+                  </div>
                 </div>
                 <div class="form-floating col-md-3">
                   <input
@@ -305,6 +329,7 @@
                     placeholder="123"
                     required
                   /><label for="cc-cvv">CVV</label>
+                  <div class="invalid-feedback">Security code is required</div>
                 </div>
               </div>
               <hr class="my-4" />
