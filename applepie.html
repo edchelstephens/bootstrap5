@@ -111,9 +111,12 @@
               </div>
               <div class="col-md-8">
                 <a
-                  class="btn btn-success float-end"
+                  class="btn btn-success float-right"
                   type="button"
                   href="shoppingbasket.html"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#shoppingCart"
+                  aria-control="shoppingCart"
                   >Add to basket</a
                 >
               </div>
@@ -211,7 +214,7 @@
       </div>
 
       <div
-        class="offcanvas offcanvas-start"
+        class="offcanvas offcanvas-start shopping-cart-offcanvas"
         data-bs-scroll="true"
         tabindex="-1"
         id="shoppingCart"
@@ -338,10 +341,10 @@
               </div>
             </div>
           </form>
-          <a href="order.html" type="button" class="m1 btn btn-sucess"
+          <a href="order.html" type="button" class="m1 btn btn-success"
             >Go to order page</a
           >
-          <a href="" class="m1-btn btn-danger" type="button"
+          <a href="" class="m1 btn btn-danger" type="button"
             >Clear your shopping cart</a
           >
         </div>
