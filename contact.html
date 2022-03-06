@@ -65,6 +65,89 @@
             <li class="breadcrumb-item active" aria-current="page">Contact</li>
           </ol>
         </nav>
+
+        <form action="" method="POST">
+          <div class="text-center">
+            <h3>Contact us</h3>
+            <h4 class="text-muted">We would love to hear from you!</h4>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <div class="mb-2">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  aria-label="name"
+                  placeholder="Your Name *"
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  aria-label="email"
+                  placeholder="Your Email *"
+                />
+              </div>
+              <div class="mb2">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  aria-label="phone"
+                  placeholder="Your Phone Number"
+                />
+              </div>
+              <div class="mb-2">
+                <button class="btn btn-primary" id="sendMessage" type="button">
+                  Send message
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="div">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Your message*"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div
+          class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3"
+        >
+          <div
+            class="toast hide"
+            id="sendMessage"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <strong class="me-auto">Bethany</strong
+              ><button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">
+              Message sent. Will get back to you soon!
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -73,5 +156,17 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      sendMessageButton = document.getElementById("sendMessage");
+      sendMessageButton.onclick = () => {
+        const toasts = document.querySelectorAll(".toast");
+        const toastElements = [].slice.call(toasts);
+        const toastList = toastElements.map((toast) => {
+          return new bootstrap.Toast(toast);
+        });
+        toastList.forEach((toast) => toast.show());
+      };
+    </script>
   </body>
 </html>
